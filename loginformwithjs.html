@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>LOGIN FORM|JS</title>
+	<style type="text/css">
+		fieldset{
+			width: 350px;
+			height: 400px;
+			margin-left: 500px;
+			margin-top: 150px;
+			border-radius: 10px;
+
+		}
+		fieldset:hover{
+			box-shadow: 12px 12px 6px dimgrey;
+		}
+		form{
+			margin-left: 100px;
+		}
+		h1{
+			margin-left: 50px;
+			width: 260px;
+			background-color: #333;
+			color: #fff;
+		}
+		input[type=submit]{
+			margin-left: 60px;
+		}
+
+	</style>
+</head>
+<body>
+	<fieldset>
+	
+		<h1>&nbsp;&nbsp;&nbsp;&nbsp;LOGIN HERE</h1>
+		<form method="POST" id="form" onsubmit="validateForm(event)">
+		<p>
+			<b>USERNAME:</b>
+		</p>
+		<p>
+			<input type="text" name="username">
+		</p>
+		<p>
+			<b>EMAIL:</b>
+		</p>
+		<p>
+			<input type="email" name="email" required>
+		</p>
+		<p>
+			<b>ADDRESS:</b>
+		</p>
+		<p>
+			<input type="text" name="address">
+		</p>
+		<p>
+			<b>PASSWORD:</b>
+		</p>
+		<p>
+			<input type="password" name="password" required>
+		</p>
+		<input type="submit" name="submit" value="SUBMIT" onclick="check()">
+	</form>
+</fieldset>
+
+ <script>
+    function validateForm(event) {
+      event.preventDefault();
+      const inputs = document.querySelectorAll('input[type="text"]');
+      let valid = true;
+
+      for (let i = 0; i < inputs.length; i++) {
+        if (inputs[i].value.trim() === "") {
+          alert("Please fill in the field: " + inputs[i].name);
+          inputs[i].focus();
+          valid = false;
+          break;
+        }
+      }
+   if (valid) {
+        alert("Submitted Done!");
+      }
+    }
+  </script>
+
+</body>
+</html>

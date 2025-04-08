@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Navigation flexbox</title>
+	<style type="text/css">
+		.navbar{
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			background-color: #333;
+			color: #fff;
+			padding: 15px 20px;
+		}
+		.menus{
+			display: flex;
+			gap: 20px;
+			list-style-type: none;
+			font-size: 25px;
+			margin: 0;
+			padding: 0;
+
+			
+		}
+		.menus li a{
+			text-decoration: none;
+			color: #fff;
+
+		}
+		.menus li a:hover{
+			background-color: chocolate;
+			border-radius: 500px;
+		}
+		.logo{
+			font-size: 30px;
+			font-weight: bold;
+		}
+		/*responsiveness*/
+		@media only screen and (max-width:  600px){
+			.navbar{
+				flex-direction: column;
+				align-items: center;
+				color: chocolate;
+			}
+			.content{
+				flex-direction: column;
+			}
+			/*.menus{
+				flex-direction: column;
+				
+			}*/
+		}
+		@media only screen and (max max-width: 768px){
+			.navbar{
+				font-size: 32px;
+				align-items: center;
+				color: yellow;
+			}
+			.content{
+				flex-direction: row-reverse;
+			}
+		}
+		fieldset{
+			width: 300px;
+			height: 150px;
+			border-width: 5px;
+			border-color: chocolate;
+		}
+		.content{
+			display: flex;
+			margin-top: 10px;
+			justify-content: space-between;
+		}
+		.footer{
+			background-color: #333;
+			color: #fff;
+			margin-top: 300px;
+			height: 50px;
+			font-size: 22px;
+		}
+	</style>
+</head>
+<body>
+	<nav class="navbar">
+		<div class="logo">MYSITE</div>
+		<ul class="menus">
+			<li><a href="#">HOME</a></li>
+			<li><a href="#">ABOUT</a></li>
+			<li><a href="#">SERVICES</a></li>
+			<li><a href="#">CONTACT</a></li>
+		</ul>
+
+		
+	</nav>
+	<div class="content">
+		<div class="cont1">
+			<fieldset></fieldset>
+		</div>
+		<div class="cont2"><fieldset></fieldset></div>
+		<div class="cont3"><fieldset></fieldset></div>
+	</div>
+<div class="footer">
+	
+	&copy;Copyright Reserved by Mnbusiness Group.
+</div>
+
+
+
+
+</body>
+</html>

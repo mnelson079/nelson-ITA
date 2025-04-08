@@ -1,0 +1,152 @@
+<DOCTYPE html>
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title></title>
+		<style>
+			body{
+				background-color: whitesmoke;
+				font-family: arial;
+			}
+		   table{
+		   	margin: 50px;
+		   	width: 90%;
+		   	height: auto;
+		   	padding: 1rem;
+		   	font-size:1em;
+		   	background-color: lavenderblush;
+		   }
+
+		  #demo{
+		  	display: none;
+		  }
+		  #animate-one{
+		  	width: 120px;
+		  	display: inline-flex;
+		  	padding: 4px;
+		  	height: 25px;
+		  }
+		  table td button{
+		  	width: 12vw;
+		  	padding: 10px;
+		  	border: none;
+		  	font-size: 18px;
+		  	color: lavenderblush;
+		  	background-color: black;
+		  	margin-left: 40px;
+		  	cursor: pointer;
+		  }
+		  table th{
+		  	font-size:24px;
+		  	padding: 10px;
+		  }
+		 table tr td hr{
+		 	color: red;
+		 	opacity: 0.3;
+
+		 }
+		 .animate{
+		 	padding: 4px;
+		 	margin: 4px;
+		 	width: 10px;
+		 	height: 10px;
+		 	border-radius: 50px;
+		 	animation: div-animate 2s ease-in-out infinite;
+		 }
+		 @keyframes div-animate{
+		 	0%{
+		 		transform: translateY(0), scale(1.0);
+		 		background-color: darkred;
+		 	}
+		 	50%{
+		 		transform: translateY(100),scale(1.3);
+		 		background-color: green;
+		 		width: 12px;
+		 		height: 12px;
+		 	}
+		 	100%{
+		 		transform: translateY(0);
+		 		background-color: transparent;
+		 		box-shadow: 0 1px 10px rgba(0, 0, 0, 1.3);
+		 	}
+		 }
+		 .animate-two{
+		 	width: 100%;
+		 	color: lavenderblush;
+		 	padding: 8px;
+		 	margin: 4px;
+		 	animation: animate-two 0.8s ease-in-out;
+		 }
+		 @keyframes animate-two{
+		 	0%{
+		 		transform: translateX(40);
+		 		width: 40%;
+		 		background-color: red;
+		 	}
+		 	50%{
+		 		transform: translateX(60);
+		 		width: 60%;
+		 		background-color: yellow;
+		 	}
+		 	100%{
+		 		transform: translateX(100);
+		 		background-color: green;
+		 		width: 100%;
+		 	}
+		 }
+		</style>
+	</head>
+	<body>
+		<table>
+			<tr>
+				<th>Clickable Buttons</th>
+				<th>Details</th>
+			</tr>
+			<tr>
+				<td colspan="2"><hr></td>
+			</tr>
+			<tr>
+				<td> <center><button id="content">View Names!</button></center></td>
+				<td><div id="contentToShow"></div></td>
+			</tr>
+			<tr>
+				<td colspan="2"><hr></td>
+			</tr>
+
+		</table>
+		<div id="demo">
+			<p>
+				<div id="animate-one">
+				<div class="animate"></div>
+				<div class="animate"></div>
+				<div class="animate"></div>
+				<div class="animate"></div>
+				</div>
+				<h2> New information</h2> <hr>
+				<div class="animate-two">
+				</div>
+				Name: Benjamin <br> Class: IT CLASS A <br> Email: benjamin@gmail.com
+			</p>
+			<button >LessMore</button>
+		</div>
+		<div id="date">
+          
+			
+		</div>
+		<script>
+			content=document.getElementById("content");
+			contentToShow=document.getElementById("contentToShow");
+			demo=document.getElementById("demo");
+
+			content.addEventListener("click",function() {
+				demo.style.display="block";
+				contentToShow.innerHTML=demo.innerHTML;
+				demo.style.display="none";
+			});
+
+		</script>
+	
+	</body>
+	</html>

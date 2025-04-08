@@ -1,0 +1,103 @@
+		*{
+			background-color: rgba(240,244,249,255);
+			font-family: "Google Sans",roboto,"Noto Sans Myanmar UI",arial,"sans-serif";
+		}
+		fieldset{
+			background-color: white;
+			width: 68%;
+			height: 350px;
+			border-color: transparent;
+			border-radius: 10px;
+			margin-left: 200px;
+			margin-top: 120px;
+		}
+		.Google_logo{
+			width: 4%;
+			height: 10%;
+			background-color: transparent;
+			margin-left: 20px;
+			margin-top:20px;
+		}
+		p{
+			background-color: transparent;
+			margin-left: 20px;
+		}
+		p b{
+			background-color: transparent;
+		}
+		.email{
+			background-color: transparent;
+			float: right;
+			margin-top: -80px;
+			width: 430px;
+			height: 60px;
+			border-width: 1px;
+			border-color: black;
+			margin-right: 20px;
+			border-radius: 6px;
+			outline-color: dodgerblue;
+
+		}
+		select{
+			margin-left: 200px;
+			margin-top: 20px;
+			border-color: transparent;
+		}
+		h5{
+			background-color: transparent;
+			float: right;
+			color: dodgerblue;
+			margin-top: 0px;
+			margin-right: 340px;
+		}
+		.text-learn{
+			float: right;
+			font-size: 13.5px;
+			background-color: transparent;
+			margin-right: -370px;
+			margin-top: 50px;
+			color: black;
+
+		}
+		a{
+			text-decoration: none;
+			background-color: transparent;
+			color: dodgerblue;
+		}
+		a:hover{
+			text-decoration: underline;
+		}
+		button{
+			float: right;
+			margin-top: 160px;
+			border-radius: 20px;
+			width: 80px;
+			height: 40px;
+			background-color: #2596be;
+			border-color: transparent;
+			color: white;
+			margin-right: -450px;
+			
+		}
+		.create{
+			float: right;
+			margin-top: 173px;
+			margin-right: -340px;
+		}
+		.create:hover{
+			background-color: whitesmoke;
+			border-radius: 20px;
+
+		}
+		a p.create{
+			color: black;
+		}
+		.text-help{
+			float: right;
+			margin-right: 230px;
+			margin-top: 20px;
+			font-size: 11.5px;
+		}
+		.text-help:hover{
+			background-color: whitesmoke;
+		}
